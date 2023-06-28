@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Campaign</title>
+  <link rel="stylesheet" href="">
+
+
+  <style>
+    body {
+      display: block;
+      margin: 8px;
+    }
+
+    #main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-style: double;
+      width: 30%;
+      margin: auto;
+
+    }
+
+    #btn {
+
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="main">
+    <h2><b><u>封面產品創建表單</u></b></h2><br>
+    <form action="/api/1.0/marketing/campaigns" method="POST" enctype="multipart/form-data">
+      <h3>產品名稱</h3>
+      <label>請輸入要作為 Campaign 的產品名稱</label><br>
+      <input type="text" name="title" placeholder="產品名稱"><br>
+
+      <h3>廣告標語</h3>
+      <textarea name="campaign_text" cols="40" rows="5"></textarea><br>
+      <label>
+        <h3>Campaign 封面</h3>
+      </label><br>
+      <input type="file" name="campaign_image"><br><br>
+      <button id="btn" type="submit">
+        <p>點擊以新增</p>
+      </button>
+    </form>
+
+    <script src="/routes/marketing.js"></script>
+  </div>
+</body>
+
+</html>

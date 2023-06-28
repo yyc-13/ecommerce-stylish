@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Product Generate</title>
+  <link href="../css/product_input.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <h4>Generate your New Product.</h4>
+    <form action="/generate-product" method="POST" enctype="multipart/form-data">
+      <lable>產品名稱：</lable>
+      <input type="text" name="title" placeholder="請輸入產品名稱"><br>
+
+      <lable>產品敘述：</lable>
+      <input type="text" name="description" placeholder="請輸入產品敘述"><br>
+
+      <label>產品價錢：</label>
+      <input type="number" name="price" placeholder="請輸入產品價錢"><br>
+
+      <lable>材質：</lable>
+      <input type="text" name="texture" placeholder="請輸入產品材質"><br>
+
+      <label>洗滌方式：</label>
+      <input type="text" name="wash" placeholder="衣服洗滌方式"><br>
+
+      <label>製造地點：</label>
+      <input type="text" name="place" placeholder="製造地點"><br>
+
+      <label>備註：</label>
+      <input type="text" name="note" placeholder="產品備註"><br>
+
+      <label>Product multiline story：</label>
+      <input type="text" name="story" placeholder="Product multiline story"><br>
+
+      <label for="category">
+        <h3>
+          <bold>Category</bold>
+        </h3>
+      </label>
+      <div id="variant">
+        <select id="category" name="category">
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+          <option value="accessories">Accessories</option>
+        </select><br>
+
+        <label>color code</label>
+        <input type="text" name="colorCode" placeholder="eg., #FF5733 "><br>
+
+        <label>尺寸：</label>
+        <select name="sizes">
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select><br>
+
+        <label>存貨量</label>
+        <input type="number" name="stock" placeholder="eg., 6 "><br>
+      </div><br>
+
+
+      <lable>主要圖片：</lable>
+      <input type="file" name="main_image"><br>
+
+      <label>其他圖片：</label>
+      <input type="file" name="other_images" multiple><br><br>
+
+      <button type="submit" id="submit_btn">
+        <p>點擊以新增</p>
+      </button>
+    </form>
+
+    <script src="app.js"></script>
+  </div>
+</body>

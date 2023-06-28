@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>STYLiSH 2021</title>
+
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/product.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 20px 0;
+    }
+
+    .jumbotron {
+      text-align: center;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .container {
+      max-width: 350px;
+    }
+
+    form {
+      padding: 20px;
+      box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tappay-field-focus {
+      border-color: #66afe9;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+      /*盒子的陰影*/
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    }
+
+    .has-error .tappay-field-focus {
+      border-color: #843534;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    }
+
+    .has-success .tappay-field-focus {
+      border-color: #2b542c;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+    }
+  </style>
+  <script src="components/header.js" type="text/javascript"></script>
+  <script src="components/footer.js" type="text/javascript"></script>
+</head>
+
+<body class="vsc-initialized">
+  <header-component></header-component>
+
+  <main>
+    <div id="product">
+      <img class="product__main-image"> <!-- 放main-image -->
+      <div class="product__detail">
+        <div class="product__title"></div>
+        <div class="product__id"></div>
+        <div class="product__price"></div>
+        <div class="product__variants">
+          <div class="product__variant">
+            <div class="product__variant-name">顏色｜</div>
+            <div class="product__colors" id="colors">
+
+            </div>
+          </div>
+          <div class="product__variant">
+            <div class="product__variant-name">尺寸｜</div>
+            <div class="product__sizes" id="sizes">
+              <!-- 選到把它加上 class="product__size product__size--selected" -->
+
+            </div>
+          </div>
+          <div class="product__variant">
+            <div class="product__variant-name">數量｜</div>
+            <div class="product__quantity">
+              <button id="decrement">-</button>
+              <div id="quantity">1</div>
+              <button id="increment">+</button>
+            </div>
+          </div>
+          <div class="container">
+            <!--tappay 的部分-->
+            <form id="tappay">
+              <div class="form-group card-number-group">
+                <label for="card-number" class="control-label"><span id="cardtype"></span>卡號</label>
+                <div class="form-control card-number"></div>
+              </div>
+              <div class="form-group expiration-date-group">
+                <label for="expiration-date" class="control-label">卡片到期日</label>
+                <div class="form-control expiration-date" id="tappay-expiration-date"></div>
+              </div>
+              <div class="form-group cvc-group">
+                <label for="cvc" class="control-label">卡片後三碼</label>
+                <div class="form-control cvc"></div>
+              </div>
+
+            </form>
+          </div>
+
+          <button type="submit" form="tappay" class="btn btn-default">直接購買</button>
+        </div>
+
+
+
+        <button id="add-to-cart">加入購物車</button>
+        <div class="products__note">實品顏色一單品照為主</div>
+        <div class="product__texture">棉 100%</div>
+        <div class="product__description">厚薄：薄<br>彈性：無
+        </div>
+        <div class="product__wash">清洗：手洗，溫水</div>
+        <div class="product__place">產地：中國</div>
+      </div>
+      <div class="seperator">
+        "更多產品資訊"
+      </div>
+      <div class="product__story">
+        O.N.S is all about options, which is why we took our staple polo shirt and upgraded it with slubby linen
+        jersey, making
+        it even lighter for those who prefer their summer style extra-breezy.
+      </div>
+      <img class="product__image">
+      <img class="product__image">
+      <img class="product__image">
+      <img class="product__image">
+    </div>
+  </main>
+
+  <footer-component></footer-component>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://js.tappaysdk.com/tpdirect/v5.7.0"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="script_productPage.js"></script>
+</body>
