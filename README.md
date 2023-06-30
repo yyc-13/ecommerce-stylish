@@ -1,6 +1,9 @@
 # Stylish - Full-stack E-commerce Web Application
 
-Stylish is a comprehensive e-commerce web application designed to deliver a user-friendly shopping experience. Developed as a coding bootcamp project, it includes a variety of standard e-commerce features with a rich tech stack.
+Developed a full-featured e-commerce website with key functionalities such as user authentication, product catalog, shopping cart, and checkout processes.  
+Leveraged HTML, CSS, JavaScript, Node.js, Express.js, and MySQL for front-end and back-end development, implementing the MVC design pattern and RESTful APIs.
+Enhanced the user experience with dynamic UI.
+Managed project deployment and data storage using AWS EC2 and S3.
 
 ## Features
 
