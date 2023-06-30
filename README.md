@@ -1,61 +1,50 @@
-## Outline
+# Stylish - Full-stack E-commerce Web Application
 
-### Programming Language
+Stylish is a comprehensive e-commerce web application designed to deliver a user-friendly shopping experience. Developed as a coding bootcamp project, it includes a variety of standard e-commerce features with a rich tech stack.
 
-1. HTML, CSS
-2. JavaScript
+## Features
 
-### Backend Environment and Framework
+- **User Authentication:** Register and log in to personal accounts.
+- **Product Catalog:** Browse through a wide array of products with filter and sort functionalities.
+- **Shopping Cart:** Add items to the cart, modify item quantities, and view total pricing.
+- **Checkout:** Secure and seamless checkout process with order summary and payment methods.
 
-1. Linux
-2. Node.js
-3. Express.js
+## Tech Stack
 
-### SQL Database
+This project leverages a full-stack technology environment:
 
-1. CRUD Operations: MySQL
-2. Indexing, Primary Key, Foreign Key and Joins
-3. Transaction and ACID
-4. Data Model: One-to-One, One-to-Many, Many-to-Many
-5. Database Normalization
-6. Security and SQL Injection.
-7. Query Builder and ORM
-8. Backup and Migration
+**Programming Languages:**
 
-### NoSQL Database
+- HTML, CSS, JavaScript for front-end structure, styling, and interaction.
 
-1. Introduction to NoSQL database
-2. CAP Theorem (Basic)
+**Backend Environment and Framework:**
 
-### Cloud Service
+- Linux OS, with Node.js and Express.js for server-side environment.
 
-1. AWS EC2 and S3
-2. AWS Auto Scaling: Load Balancer
+**Database Technologies:**
 
-### Parallel Computing
+- MySQL for CRUD operations, data normalization, security, etc. Basics of NoSQL databases are also incorporated.
 
-1. Multi-Threaded Programming
-2. Race Condition and Deadlock
+**Cloud Services:**
 
-### Networking
+- AWS EC2 and S3 for project deployment and data storage, along with AWS Auto Scaling for traffic load management.
 
-1. TCP/IP Protocol
-2. HTTP and HTTPS
-3. Domain Name System (DNS)
-4. Public-Key Cryptography
-5. Content Delivery Network (CDN)
-6. Cache Mechanism
+**Parallel Computing:**
 
-### Key Concepts
+- Multi-threaded programming for simultaneous operations handling.
 
-1. Version Control: Git, Github
-2. Asynchronous: callback, Promise and async/await
-3. Javascript Event Loop
-4. MVC design pattern
-5. RESTful APIs
-6. Unit Test
-7. OOP and Functional Programming
-8. Load Test: Artillery
-9. CI/CD: Docker & Jenkins
-10. Availability and Scalability
-11. Coding styles and Code Readability
+**Networking:**
+
+- Comprehensive understanding of TCP/IP protocol, HTTP/HTTPS, DNS, public-key cryptography, CDN, and cache mechanisms.
+
+**Key Concepts:**
+
+- Git and Github for version control.
+- Asynchronous programming with callback, Promise, and async/await.
+- MVC design pattern and RESTful APIs for structuring the app.
+- OOP and Functional Programming for efficient code.
+- Unit Testing for code reliability.
+- Load Testing with Artillery for traffic simulation.
+- CI/CD practices using Docker & Jenkins for streamlined deployment.
+- Code readability and scalable coding styles principles.
+- Focus on availability and scalability for optimal performance and user experience.
